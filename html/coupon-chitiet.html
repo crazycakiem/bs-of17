@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="">
+ <meta name="author" content="">
+ <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+ <title>OF Business</title>
+ <!-- Bootstrap Core CSS -->
+ <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="../plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+ <link href="../plugins/bower_components/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+ <!-- Menu CSS -->
+ <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+ <!-- animation CSS -->
+ <link href="css/animate.css" rel="stylesheet">
+ <!-- Custom CSS -->
+ <link href="css/style.css" rel="stylesheet">
+ <!-- color CSS -->
+ <link href="css/colors/default.css" id="theme" rel="stylesheet">
+ <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+ <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+ <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ <![endif]-->
+</head>
+
+<body class="fix-header">
+ <!-- ============================================================== -->
+ <!-- Preloader -->
+ <!-- ============================================================== -->
+ <div class="preloader">
+  <svg class="circular" viewBox="25 25 50 50">
+   <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+  </svg>
+ </div>
+ <!-- ============================================================== -->
+ <!-- Wrapper -->
+ <!-- ============================================================== -->
+ <div id="wrapper">
+  <!-- ============================================================== -->
+  <!-- Topbar header - style you can find in pages.scss -->
+  <!-- ============================================================== -->
+  <nav class="navbar navbar-default navbar-static-top m-b-0">
+   <div class="navbar-header">
+    <div class="top-left-part">
+     <!-- Logo -->
+     <a class="logo" href="index.html">
+      <span class="hidden-xs">
+       <img src="../plugins/images/logo-of-sm.png" alt="home" class="light-logo" />
+      </span>
+     </a>
+    </div>
+    <!-- /Logo -->
+    <ul class="nav navbar-top-links navbar-left">
+     <li><a href="javascript:void(0)" class="open-close waves-effect waves-light"><i class="ti-split-h"></i></a></li>
+    </ul>
+    <ul class="nav navbar-top-links navbar-left">
+     <li>
+      <div class="time time-on-top" data-countdown="countdown" data-date="12-30-2017-10-20-50"></div>
+     </li>
+    </ul>
+    <ul class="nav navbar-top-links navbar-right pull-right">
+     <li>
+      <a class="profile-pic" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">FAHASA CORP</b></a>
+      <!-- /.dropdown-user -->
+     </li>
+
+     <!-- /.dropdown -->
+    </ul>
+    <ul class="nav navbar-top-links navbar-right">
+     <!-- <li><a href="javascript:void(0)" class="open-close waves-effect waves-light"><i class="ti-menu"></i></a></li> -->
+     <li class="dropdown">
+      <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"> <i class="ti-menu-alt"></i></a>
+      <ul class="dropdown-menu mailbox animated bounceInDown">
+       <li>
+        <div class="message-center">
+         <a href="#">Giới thiệu</a>
+         <a href="#">Quy trình</a>
+         <a href="#">Số liệu</a>
+         <a href="#">Thời gian & Sự kiện</a>
+         <a href="#">Ban tổ chức</a>
+         <a href="#">Đối tác</a>
+         <a href="#">Tài trợ</a>
+         <a href="#">Tài liệu</a>
+         <a href="#">Tin tức</a>
+         <a href="#">Doanh nghiệp</a>
+        </div>
+       </li>
+      </ul>
+      <!-- /.dropdown-messages -->
+     </li>
+     <li><a href="#"><span class="btn btn-info">Đến trang Microsite</span></a></li>
+     <li class="dropdown">
+      <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"> <i class="mdi mdi-phone"></i>
+       <span>HOTLINE HỖ TRỢ</span>
+      </a>
+      <ul class="dropdown-menu mailbox animated bounceInDown">
+       <li>
+        <div class="message-center">
+         <a href="#">
+          <div class="mail-contnet no-elip">
+           <h5>Hỗ trợ doanh nghiệp omni-chanel (chuỗi của hàng liên kết)</h5>
+           <span class="mail-desc">Mrs Trang: <span>0900000000</span></span>
+          </div>
+         </a>
+         <a href="#">
+          <div class="mail-contnet no-elip">
+           <h5>Hỗ trợ doanh nghiệp omni-chanel (chuỗi của hàng liên kết)</h5>
+           <span class="mail-desc">Mrs Trang: <span>0900000000</span></span>
+          </div>
+         </a>
+         <a href="#">
+          <div class="mail-contnet no-elip">
+           <h5>Hỗ trợ doanh nghiệp omni-chanel (chuỗi của hàng liên kết)</h5>
+           <span class="mail-desc">Mrs Trang: <span>0900000000</span></span>
+          </div>
+         </a>
+         <a href="#">
+          <div class="mail-contnet no-elip">
+           <h5>Hỗ trợ doanh nghiệp omni-chanel (chuỗi của hàng liên kết)</h5>
+           <span class="mail-desc">Mrs Trang: <span>0900000000</span></span>
+          </div>
+         </a>
+         <a href="#">
+          <div class="mail-contnet no-elip">
+           <h5>Hỗ trợ doanh nghiệp omni-chanel (chuỗi của hàng liên kết)</h5>
+           <span class="mail-desc">Mrs Trang: <span>0900000000</span></span>
+          </div>
+         </a>
+        </div>
+       </li>
+      </ul>
+      <!-- /.dropdown-messages -->
+     </li>
+     <!-- .Task dropdown -->
+    </ul>
+   </div>
+   <!-- /.navbar-header -->
+   <!-- /.navbar-top-links -->
+   <!-- /.navbar-static-side -->
+  </nav>
+  <!-- End Top Navigation -->
+  <!-- ============================================================== -->
+  <!-- Left Sidebar - style you can find in sidebar.scss  -->
+  <!-- ============================================================== -->
+  <div class="navbar-default sidebar" role="navigation">
+   <div class="sidebar-nav slimscrollsidebar">
+    <div class="sidebar-head">
+     <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Navigation</span></h3>
+    </div>
+    <div class="user-profile">
+     <div class="dropdown user-pro-body">
+      <div><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"></div>
+      <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAHASA CORP <span class="caret"></span></a>
+      <ul class="dropdown-menu animated flipInY">
+       <li><a href="login.html"><i class="fa fa-power-off"></i> Đăng xuất</a></li>
+      </ul>
+     </div>
+    </div>
+    <ul class="nav" id="side-menu">
+     <li> <a href="index.html" class="waves-effect"><i class="mdi mdi-av-timer fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard <span class="fa arrow"></span> </span></a></li>
+     <li> <a href="thongbao.html" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Thông báo<span class="fa arrow"></span> <span class="label label-rouded label-info pull-right">20</span> </span></a></li>
+     <li> <a href="suathongtin.html" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Sửa thông tin<span class="fa arrow"></span></span></a></li>
+     <li> <a href="cuahang.html" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Cửa hàng<span class="fa arrow"></span></span></a></li>
+     <li> <a href="sanpham.html" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Sản phẩm<span class="fa arrow"></span></span></a></li>
+     <li> <a href="khuyenmai.html" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Khuyến mãi<span class="fa arrow"></span></span></a></li>
+     <li> <a href="bootsale.html" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Bootsale<span class="fa arrow"></span></span></a></li>
+     <li> <a href="deal.html" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">DEAL<span class="fa arrow"></span></span></a></li>
+     <li> <a href="danhgia.html" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Đánh giá<span class="fa arrow"></span></span></a></li>
+     <li> <a href="b2b.html" class="waves-effect"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">B2B<span class="fa arrow"></span></span></a></li>
+     <li> <a href="coupon.html" class="waves-effect active"><i class="mdi mdi-format-color-fill fa-fw"></i> <span class="hide-menu">Coupon<span class="fa arrow"></span></span></a></li>
+     <li><a href="login.html" class="waves-effect"><i class="mdi mdi-logout fa-fw"></i> <span class="hide-menu">Đăng xuất</span></a></li>
+    </ul>
+   </div>
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Left Sidebar -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- Page Content -->
+  <!-- ============================================================== -->
+  <div id="page-wrapper">
+   <div class="container-fluid">
+    <div class="row bg-title">
+     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+      <h4 class="page-title">Dashboard</h4>
+     </div>
+     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+      <ol class="breadcrumb">
+       <li class="active">Dashboard</li>
+      </ol>
+     </div>
+     <!-- /.col-lg-12 -->
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- Demo table -->
+    <!-- ============================================================== -->
+    <div class="row">
+     <div class="col-md-12">
+      <div class="panel white-box">
+       <h3 class="box-title"><strong>QUẢN LÝ DANH SÁCH COUPON</strong></h3>
+       <div class="table-responsive">
+        <div class="dataTables_wrapper">
+         <div class="table-top clearfix">
+          <div id="myTable_filter" class="dataTables_filter">
+           <label>Tim kiếm:<input type="search" class="" placeholder="" aria-controls="myTable"></label>
+          </div>
+          <div class="pull-right">
+           <a class="btn btn-warning" tabindex="0" href="themmoicoupon.html"><span>Thêm mới coupon</span></a>
+          </div>
+         </div>
+         <div class="table-top clearfix">
+          <div class="pull-left m-r-10">
+           <select class="form-control">
+             <option>Trạng thái</option>
+             <option>2</option>
+             <option>3</option>
+             <option>4</option>
+             <option>5</option>
+           </select>
+          </div>
+          <div class="pull-left m-r-10">
+           <select class="form-control">
+             <option>Loại coupon</option>
+             <option>2</option>
+             <option>3</option>
+             <option>4</option>
+             <option>5</option>
+           </select>
+          </div>
+          <div class="pull-left m-r-10 sort-il">
+           <button class="btn btn-outline btn-default waves-effect waves-light m-r-5"><span>Số lượng </span> <i class="ti-angle-down m-l-5"></i></button>
+          </div>
+         </div>
+         <table class="table table-hover manage-u-table">
+          <thead>
+           <tr>
+            <th width="20%">Chương trình</th>
+            <th width="">Đã dùng</th>
+            <th width="">Loại</th>
+            <th width="40%">Mô tả</th>
+            <th width="">Khoá coupon</th>
+            <th width="">Thao tác</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td>
+             NỮ CÔNG - GIA CHÁNH
+            </td>
+            <td>0/10000</td>
+            <td>Ngẫu nhiên</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</td>
+            <td class="text-center">
+             <div class="checkbox checkbox-info">
+              <input id="checkbox42" type="checkbox">
+              <label for="checkbox42"> </label>
+             </div>
+            </td>
+            <td>
+             <a href="#" data-toggle="tooltip" data-original-title="Sửa"><i class="ti-pencil-alt"></i></a>
+             <a id="sa-warning" href="#" data-toggle="tooltip" data-original-title="Xoá"><i class="ti-trash"></i></a>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             NỮ CÔNG - GIA CHÁNH
+            </td>
+            <td>0/10000</td>
+            <td>Ngẫu nhiên</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</td>
+            <td class="text-center">
+             Hết
+            </td>
+            <td>
+             <a href="#" data-toggle="tooltip" data-original-title="Sửa"><i class="ti-pencil-alt"></i></a>
+             <a id="sa-warning" href="#" data-toggle="tooltip" data-original-title="Xoá"><i class="ti-trash"></i></a>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             NỮ CÔNG - GIA CHÁNH
+            </td>
+            <td>0/10000</td>
+            <td>Ngẫu nhiên</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</td>
+            <td class="text-center">
+             <div class="checkbox checkbox-info">
+              <input id="checkbox4" type="checkbox">
+              <label for="checkbox4"> </label>
+             </div>
+            </td>
+            <td>
+             <a href="#" data-toggle="tooltip" data-original-title="Sửa"><i class="ti-pencil-alt"></i></a>
+             <a id="sa-warning" href="#" data-toggle="tooltip" data-original-title="Xoá"><i class="ti-trash"></i></a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <div class="table-bot">
+          <div class="dataTables_length" id="myTable_length">
+           <label>Hiển thị
+            <select name="myTable_length" aria-controls="myTable" class="">
+             <option value="10">10</option>
+             <option value="25">25</option>
+             <option value="50">50</option>
+             <option value="100">100</option>
+            </select> cửa hàng
+           </label>
+          </div>
+          <div class="dataTables_paginate paging_simple_numbers" id="myTable_paginate">
+           <a class="paginate_button previous disabled" aria-controls="myTable" data-dt-idx="0" tabindex="0" id="myTable_previous">Trước</a>
+           <span>
+            <a class="paginate_button current" aria-controls="myTable" data-dt-idx="1" tabindex="0">1</a>
+            <a class="paginate_button " aria-controls="myTable" data-dt-idx="2" tabindex="0">2</a>
+            <a class="paginate_button " aria-controls="myTable" data-dt-idx="3" tabindex="0">3</a>
+            <a class="paginate_button " aria-controls="myTable" data-dt-idx="4" tabindex="0">4</a>
+            <a class="paginate_button " aria-controls="myTable" data-dt-idx="5" tabindex="0">5</a>
+            <a class="paginate_button " aria-controls="myTable" data-dt-idx="6" tabindex="0">6</a>
+           </span>
+           <a class="paginate_button next" aria-controls="myTable" data-dt-idx="7" tabindex="0" id="myTable_next">Next</a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- /row -->
+   </div>
+   <!-- /.container-fluid -->
+   <footer id="footer">
+    <div class="container1">
+     <div class="footer-bot clearfix">
+      <div class="col-sm-7 col-md-7 col-xs-12 collapsed-block">
+       <div class="footer-links">
+        <h3 class="links-title uppercase">ONLINE FRIDAY<a class="expander visible-xs" href="#TabBlock-1">+</a></h3>
+        <div class="tabBlock">
+         <ul class="list-links clearfix list-unstyled">
+          <li><a href="#s">Giới thiệu</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">Ban tổ chức</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">Quy chế</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">Tài liệu</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">FAQs</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">Liên hệ</a></li>
+         </ul>
+        </div>
+        <h3 class="links-title uppercase">GÓC TRUYỀN THÔNG<a class="expander visible-xs" href="#TabBlock-1">+</a></h3>
+        <div class="tabBlock">
+         <ul class="list-links clearfix list-unstyled">
+          <li><a href="#s">Tin tức</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">Báo chí nói về chúng tôi</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">Đối tác truyền thông</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">Sự kiện</a></li>
+         </ul>
+        </div>
+        <h3 class="links-title uppercase">DÀNH CHO DOANH NGHIỆP<a class="expander visible-xs" href="#TabBlock-1">+</a></h3>
+        <div class="tabBlock">
+         <ul class="list-links clearfix list-unstyled">
+          <li><a href="#s">Đăng nhập</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">Đăng ký</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">Chính sách bảo mật</a>&nbsp;|&nbsp;</li>
+          <li><a href="#">Hướng dẫn tham gia</a></li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-5 col-md-5 col-xs-12">
+       <div class="footer-logo text-center"><a href="#"><img src="../plugins/images/logo-footer-white.png" alt="fotter logo"></a> </div>
+       <p class="text-center">Copyright 2014 - 2017 © <br>Cục Thương mại điện tử và Công nghệ thông tin.</p>
+       <div class="lg-dkbct text-center">
+        <img src="../plugins/images/logo-dkbct.png" alt="fotter logo">
+       </div>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <!-- /#page-wrapper -->
+ </div>
+ <!-- /#wrapper -->
+ <!-- jQuery -->
+ <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+ <!-- Bootstrap Core JavaScript -->
+ <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+ <!-- Menu Plugin JavaScript -->
+ <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+ <!--slimscroll JavaScript -->
+ <script src="js/jquery.slimscroll.js"></script>
+ <!-- Sweet-Alert  -->
+  <script src="../plugins/bower_components/sweetalert/sweetalert.min.js"></script>
+  <script src="../plugins/bower_components/sweetalert/jquery.sweet-alert.custom.js"></script>
+ <!--Wave Effects -->
+ <script src="js/waves.js"></script>
+ <script src="js/countdown.js"></script>
+ <!-- jQuery file upload -->
+ <!-- Custom Theme JavaScript -->
+ <script src="js/custom.min.js"></script>
+</body>
+
+</html>
