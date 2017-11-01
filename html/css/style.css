@@ -350,6 +350,9 @@ hr {
   margin: 0 5px;
   vertical-align: middle;
 }
+.uppercase{
+ text-transform: uppercase;
+}
 /* Badge */
 .badge {
   text-transform: uppercase;
@@ -826,6 +829,7 @@ pre {
 }
 #wrapper {
   width: 100%;
+      background: #edf1f5;
 }
 #page-wrapper {
   padding: 0px;
@@ -5969,7 +5973,7 @@ ul.select-row-icon li a i.whn-hov {
   float: right;
   position: absolute;
   right: 15px;
-  top: 10px;
+  top: 1px;
 }
 ul.select-row-icon li a:hover,
 ul.select-row-icon li a.selected {

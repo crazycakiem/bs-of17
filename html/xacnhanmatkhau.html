@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="">
+ <meta name="author" content="">
+ <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+ <title>OF Business</title>
+ <!-- Bootstrap Core CSS -->
+ <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="../plugins/bower_components/dropify/dist/css/dropify.min.css">
+ <!-- animation CSS -->
+ <link href="css/animate.css" rel="stylesheet">
+ <!-- Custom CSS -->
+ <link href="css/style.css" rel="stylesheet">
+ <!-- color CSS -->
+ <link href="css/colors/default.css" id="theme" rel="stylesheet">
+ <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+ <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+ <!-- Preloader -->
+ <div class="preloader">
+  <div class="cssload-speeding-wheel"></div>
+ </div>
+ <section id="wrapper">
+  <div class="register-box">
+   <div class="">
+    <a href="javascript:void(0)" class="text-center db m-b-40"><img src="../plugins/images/logo-of-sm.png" alt="home" class="light-logo" /></a>
+    <!-- multistep form -->
+    <form id="msform">
+     <!-- fieldsets -->
+     <div class="row">
+      <div class="col-md-12">
+       <div class="panel panel-default text-left">
+        <div class="panel-heading"><strong>Xác nhận mật khẩu</strong></div>
+        <div class="panel-wrapper collapse in" aria-expanded="true">
+         <div class="panel-body">
+          <small class="mute">Nhập địa chỉ email bạn đã đăng ký và kiểm tra thư để nhận đường link khôi phục mật khẩu</small>
+          <form action="#">
+           <div class="form-body">
+            <div class="row">
+             <div class="col-md-12">
+              <div class="form-group">
+               <label class="control-label">Email *</label>
+               <input type="text" id="" class="form-control" placeholder="John doe"> <span class="help-block"> This is inline help </span>
+              </div>
+             </div>
+             <!--/span-->
+            </div>
+           </div>
+          </form>
+
+         </div>
+         <div class="panel-footer">
+          <button type="submit" class="btn btn-info waves-effect waves-light m-r-10">Xác nhận Email</button>
+         </div>
+        </div>
+       </div>
+       <div class="panel panel-default text-left">
+        <div class="panel-heading"><strong>Xác nhận mật khẩu</strong></div>
+        <div class="panel-wrapper collapse in" aria-expanded="true">
+         <div class="panel-body">
+          <form action="#">
+           <div class="form-body">
+            <div class="row">
+             <div class="col-md-6">
+              <div class="form-group">
+               <label class="control-label">Mật khẩu mới *</label>
+               <input type="password" id="" class="form-control" placeholder="***"> <span class="help-block"> This is inline help </span>
+              </div>
+             </div>
+             <!--/span-->
+             <div class="col-md-6">
+              <div class="form-group">
+               <label class="control-label">Nhập lại mật khẩu *</label>
+               <input type="password" id="" class="form-control" placeholder="***"> <span class="help-block"> This field has error. </span>
+              </div>
+             </div>
+             <!--/span-->
+            </div>
+           </div>
+          </form>
+
+         </div>
+         <div class="panel-footer">
+          <button type="submit" class="btn btn-info waves-effect waves-light m-r-10">Xác nhận mật khẩu</button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </form>
+    <div class="clear"></div>
+   </div>
+  </div>
+ </section>
+ <!-- jQuery -->
+ <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+ <!-- Bootstrap Core JavaScript -->
+ <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+ <!-- Menu Plugin JavaScript -->
+ <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+ <script src="../plugins/bower_components/register-steps/jquery.easing.min.js"></script>
+ <script src="../plugins/bower_components/register-steps/register-init.js"></script>
+ <!-- jQuery file upload -->
+ <script src="../plugins/bower_components/dropify/dist/js/dropify.min.js"></script>
+ <script>
+ $(document).ready(function () {
+  // Basic
+  $('.dropify').dropify();
+  // Used events
+  var drEvent = $('#input-file-events').dropify();
+  drEvent.on('dropify.beforeClear', function (event, element) {
+   return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+  });
+  drEvent.on('dropify.afterClear', function (event, element) {
+   alert('File deleted');
+  });
+  drEvent.on('dropify.errors', function (event, element) {
+   console.log('Has Errors');
+  });
+  var drDestroy = $('#input-file-to-destroy').dropify();
+  drDestroy = drDestroy.data('dropify')
+  $('#toggleDropify').on('click', function (e) {
+   e.preventDefault();
+   if (drDestroy.isDropified()) {
+    drDestroy.destroy();
+   }
+   else {
+    drDestroy.init();
+   }
+  })
+ });
+ </script>
+ <!--slimscroll JavaScript -->
+ <script src="js/jquery.slimscroll.js"></script>
+ <!--Wave Effects -->
+ <script src="js/waves.js"></script>
+ <!-- Custom Theme JavaScript -->
+ <script src="js/custom.min.js"></script>
+</body>
+
+</html>
