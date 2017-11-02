@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -210,49 +211,41 @@
      <ul id="eliteregister" class="text-center">
       <li class="active">CHỌN LOẠI DỊCH VỤ</li>
       <li class="active">THÔNG TIN DỊCH VỤ</li>
-      <li>CHỌN GÓI DỊCH VỤ</li>
-      <li>ĐIỀN YÊU CẦU</li>
+      <li class="active">CHỌN GÓI DỊCH VỤ</li>
+      <li class="active">ĐIỀN YÊU CẦU</li>
       <li>GỬI ĐĂNG KÝ</li>
      </ul>
     </div>
     <div class="row">
      <div class="col-md-12">
       <div class="panel panel-default">
-       <div class="panel-heading"><strong>THÔNG TIN DỊCH VỤ DỰ KIẾN SỬ DỤNG GÓI CHUYỂN PHÁT</strong></div>
        <div class="panel-wrapper collapse in" aria-expanded="true">
         <div class="panel-body">
-         <form action="#">
-          <div class="form-body">
-           <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-             <div class="form-group">
-              <label class="control-label">TỔNG SỐ ĐƠN HÀNG HẰNG NGÀY</label>
-              <input type="text" id="" class="form-control" placeholder="John doe"> <span class="help-block"> This is inline help </span>
-             </div>
-             <div class="form-group">
-              <label class="control-label">TỔNG SỐ ĐƠN HÀNG DỰ KIẾN TRONG NGÀY ONLINE</label>
-              <input type="text" id="" class="form-control" placeholder="John doe">
-             </div>
-             <div class="form-group">
-              <label class="control-label">ĐƠN VỊ CHUYỂN PHÁT ĐANG SỬ DỤNG</label>
-              <input type="text" id="" class="form-control" placeholder="John doe">
-             </div>
-             <div class="form-group">
-              <label class="control-label">ĐƠN VỊ CHUYỂN PHÁT DỰ KIẾN SỬ DỤNG</label>
-              <input type="text" id="" class="form-control" placeholder="John doe">
-             </div>
-             <div class="form-group">
-              <span class="help-block"><small>Quý khách có thể điều chỉnh thông tin dịch vụ dự kiến hoặc bấm TIẾP TỤC để sang bước sau</small></span>
+         <div class="row">
+          <div class="col-md-4 col-xs-12">
+           <div class="white-box">
+            <div class="user-bg"> <img width="100%" alt="user" src="../plugins/images/login-bg.jpg">
+             <div class="overlay-box">
+              <div class="user-content">
+               <a href="javascript:void(0)"><img src="data:image/png;base64,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" class="thumb-lg img-circle" alt="img"></a>
+               <h4 class="text-white">VN Post</h4>
+              </div>
              </div>
             </div>
-            <!--/span-->
            </div>
           </div>
-         </form>
-        </div>
-        <div class="panel-footer text-center">
-         <!-- /.modal -->
-         <button type="submit" class="btn btn-warning waves-effect waves-light m-r-10">Tiếp tục</button>
+          <div class="col-md-8 col-xs-12">
+           <h4><strong>GÓI DỊCH VỤ LOẠI 1</strong></h4>
+           <p>Mô tả Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+           <br>
+           <h4>ĐIỀN YÊU CẦU CỤ THỂ</h4>
+           <div>
+            <textarea class="form-control" rows="5"></textarea>
+           </div>
+           <br>
+           <button type="submit" class="btn btn-warning waves-effect waves-light m-r-10">Đăng ký</button>
+          </div>
+         </div>
         </div>
        </div>
       </div>

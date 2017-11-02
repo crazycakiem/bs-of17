@@ -2886,7 +2886,7 @@ ul.common li a:hover {
   position: relative;
 }
 .user-bg .overlay-box {
-  background: #707cd2;
+  /*background: #707cd2;*/
   opacity: 0.9;
   position: absolute;
   top: 0px;
